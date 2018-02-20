@@ -1,0 +1,305 @@
+body {
+    padding-bottom: 600px;
+    font-size: 16px;
+    margin: 0;
+}
+
+/*  */
+
+.jq3_2>div {
+    opacity: 0;
+    transition: all .5s;
+}
+
+.jq3_2.active>div {
+    opacity: 1;
+}
+
+/*  */
+
+.jq3_3 {
+    width: 100%;
+    height: 160px;
+    background: #b5b5b5;
+    overflow: hidden;
+    position: relative;
+}
+
+.jq3_3 p {
+    position: absolute;
+    bottom: -50px;
+    z-index: 2;
+    width: 100%;
+    background: #444;
+    text-align: center;
+    margin: 0;
+    line-height: 50px;
+    color: #dfdfdf;
+    transition: all .6s ease-in-out;
+}
+
+.jq3_3:hover p {
+    bottom: 0;
+}
+
+/*  */
+
+.jq3_4 div {
+    line-height: 160px;
+    background: #aaa;
+}
+
+/*  */
+
+.jq4_1 {
+    width: 100%;
+    text-align: center;
+}
+
+.jq4_1 ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #aaa;
+}
+
+.jq4_1 ul li {
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.jq4_1 ul li:hover,
+.jq4_1 ul li.active {
+    background-color: #444;
+    position: relative;
+}
+
+.jq4_1 ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.jq4_1 ul li>ul {
+    padding-left: 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 62px;
+}
+
+/*  */
+
+.jq4_2>div {
+    width: 100%;
+    height: 300px;
+    font-size: 3rem;
+    color: #fff;
+    display: none;
+}
+
+.jq4_2 .box1 {
+    background-color: rgb(255, 212, 155);
+}
+
+.jq4_2 .box2 {
+    background-color: rgb(155, 227, 255);
+}
+
+.jq4_2 .box3 {
+    background-color: rgb(255, 153, 212);
+}
+
+/*  */
+
+.jq4_3 ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    text-align: center;
+    padding: 0;
+}
+
+.jq4_3 ul li {
+    padding: 16px 0;
+    background: pink;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.jq4_3 ul li:hover {
+    background: #b7b7ff
+}
+
+.jq4_3 article {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/*  */
+
+.jq4_4 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 28%;
+    padding: 42px 12px 12px;
+    background-color: rgba(34, 34, 34, 0.95);
+}
+
+.jq4_4 p {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.jq4_4 span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    background: #ffffff7a;
+    cursor: pointer;
+}
+
+/*  */
+
+.jq4_5 div {
+    width: 50%;
+    height: 0px;
+    background-color: pink;
+    transition: all 0.5s ease-in-out;
+}
+
+.jq4_5 div.active {
+    height: 200px;
+}
+
+.jq4_5_2 div {
+    width: 50%;
+    height: 200px;
+    background-color: rgb(137, 221, 255);
+}
+
+/*  */
+
+.jq4_6 {
+    position: relative;
+    height: 300px;
+}
+
+.jq4_6 nav {
+    width: 50%;
+    height: inherit;
+    background: #ff0;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.jq4_6.navAction nav {
+    transform: translateX(0);
+}
+
+.jq4_6 .main {
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
+}
+
+.jq4_6.navAction .main {
+    transform: translateX(50%);
+}
+
+.jq4_6 header {
+    height: 44px;
+    background: pink;
+    width: 100%;
+}
+
+.jq4_6 .navBtn {
+    line-height: 44px;
+    display: inline-block;
+    background: #f9a6b4;
+    padding: 0 12px;
+}
+
+/*  */
+
+.jq5_1 h3.active {
+    background: #f9a6b4;
+}
+
+/*  */
+
+.jq5_2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 300px;
+}
+
+.jq5_2 div {
+    height: inherit;
+    background: #ff0;
+}
+
+.jq5_2 div h3.active {
+    color: #f9a6b4;
+    background: #333;
+}
+
+/*  */
+
+.jq5_3 {}
+
+.jq5_3 div {}
+
+.jq5_3 h3 {
+    background: pink;
+    margin: 0;
+    padding: 12px;
+}
+
+.jq5_3 h3.active {
+    background: rgb(255, 119, 142);
+}
+
+.jq5_3 p {
+    display: none;
+}
+
+/*  */
+
+.jq5_4 ul {
+    list-style: none;
+}
+
+.jq5_4>ul>li {
+    padding: 12px 0;
+}
+
+.jq5_4>ul>li>ul {
+    display: none;
+}
+
+/*  */
+
+.jq6_3 .goToTop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 20%;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*  */
+
+.jq6_4 {
+    font-size: 2rem;
+    color: plum;
+}
+
+.jq6_4 p::before {
+    margin-right: 8px;
+}
